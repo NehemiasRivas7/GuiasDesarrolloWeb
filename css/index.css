@@ -1,0 +1,66 @@
+/* IMPORTACIONES */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ESTILO CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #deeafa;
+    line-height: 1.5;
+    font-family: "Noto Serif", serif;
+
+}
+
+div {
+    background: #2d2d22 url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/diclc0h-489b0c10-5e33-41d1-a698-c231b6117540.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGljbGMwaC00ODliMGMxMC01ZTMzLTQxZDEtYTY5OC1jMjMxYjYxMTc1NDAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.X6e0iA0EmYJLFzKEgASX-DbxxEBCEAvAgu-9CVIFaUg); 
+    color: #F0F6F7 ;
+    background-size: cover;
+    padding: 150px;
+    background-position: bottom;
+    margin-bottom: 20px;
+    margin-top: 0px;
+   
+   
+}
+
+header {
+    
+    text-align: center;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+section {
+    margin: 30px auto;
+    width: 75%;
+}
+h2 {
+    color: #7366d0;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid  #0B0E29;
+    text-align: left;
+    font-size: 14px;
+    
+
+}
+thead, thead a {
+    background-color:#7366d0;
+    color: white;
+    text-align: center;
+}
+
+thead th, thead td, tbody td, tbody td {
+    border: 2px solid  white;
+    padding: 5px;
+}
+

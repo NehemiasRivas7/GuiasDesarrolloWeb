@@ -1,0 +1,151 @@
+/* IMPORTACIONES */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ESTILO CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F0F6F7;
+    line-height: 1.5;
+    font-family: "Noto Serif", serif;
+
+}
+
+header {
+    background: #222d2d url(../img/s.jpg); 
+    color: #F0F6F7 ;
+    background-size: cover;
+    padding: 65px 100px 35px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+   
+}
+
+h1, h2, h3 {
+    font-family: "Noto Serif", serif;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0B0E29;
+    font-size: 30px;
+}
+
+h3 {
+    color: #002C55;
+    font-size: 20px;
+}
+nav a {
+    color: #002C55;
+    font-family: 'Inter', sans-serif;
+    
+}
+nav {
+    margin-left: 20px;
+}
+nav dt {
+    padding: 2px;
+}
+nav dd {
+    padding: 1px;
+    margin-left: 1em;
+}
+
+section {
+    margin: 30px auto;
+    width: 75%;
+}
+span.cursiva {
+    font-style: italic;
+}
+
+blockquote {
+    color:#002C55
+}
+#negrita {
+    font-weight: bold;
+}
+
+#subrayado {
+    text-decoration: underline;
+}
+
+article {
+    padding: 10px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid  #0B0E29;
+    text-align: left;
+    font-size: 14px;
+    
+
+}
+thead {
+    background-color:#0B0E29;
+    color: white;
+    text-align: center;
+}
+thead th, td {
+    border: 2px solid  #002C55;
+    padding: 5px;
+}
+
+.celda-t {
+    text-align: center;
+}
+
+tbody td, tfoot td {
+    border: 2px solid rgba(134, 182, 226, 0.8);
+    padding: 5px;
+}
+tfoot {
+    text-align:center;
+}
+
+
+.image-table thead {
+    background-color:#F0F6F7;
+    border: 0px;
+    color: #0B0E29;
+}
+
+.image-table   th, .image-table  td {
+    border: 2px solid #F0F6F7;
+    padding: 5px;
+}
+
+img {
+    height: 300px;
+}
+
+#imagenes img{
+    width: 170px;
+    height: auto;
+}
+
+#lista {
+    margin-left: 30px;
+}
+footer {
+    color: #F0F6F7;
+    background-color: #0B0E29;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+footer a {
+    color: azure;
+    text-transform: lowercase;
+    
+}
