@@ -1,0 +1,100 @@
+@import url(https://fonts.googleleapis.com/css?family=Muli);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+}
+
+header{
+    background-color: #16A086;
+    height: 130px;
+    overflow: hidden;
+}
+
+footer{
+    margin-top: 20px;
+    background: #16A086;
+    height: 50px;
+
+}
+
+header div, footer div{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+h1{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+section{
+    margin: 0 auto;
+    width: 90%;
+    display: flexbox;
+    overflow: hidden; /* Crea un contexto en el que los hijos de section siendo flotantes no se salgan del flujo. Section adapta su altura para incluirlos. */
+    position: relative;
+}
+
+section article{
+    font-size: 0.9rem;
+    height: 340px;
+    width: 32.33%;
+    float: left;
+    margin: 0.5%;
+    border: 2px dashed #16A086;
+    padding: 1%;
+    overflow: hidden;
+
+
+    
+}
+
+section article img{
+    height: 180px;
+    max-width: 80%;
+    display: block; /* “margin: medida auto” funciona solo con elementos de bloque. Así, convierte img, un elemento de línea, a bloque para que se le puedan aplicar las propiedades de bloque*/
+    margin: 5px auto;
+}
+
+section article h3{
+    text-align: center;
+}
+
+footer div{
+    padding-top: 1rem;
+}
+
+section article:nth-child(2){
+    background-color: rgba(70, 130, 180, 0.9);
+    position: static;
+    left: 100px; /* Se mueve a la derecha */
+    top: 50px; /* Se mueve hacia abajo*/
+    display: none;
+    /*Se mueve en direcciones contrarias al nombre porque la idea es que se vea que se empuja la caja. Entonces, top empuja desde el borde superior hacia abajo y left desplaza desde el borde derecho hacia la derecha.
+
+    /*Las otras cajas se mantienen y no toman el espacio que dejo libre el segundo articulo porque la posición relativa del segundo articulo hace que el elemento siga ocupando su posicion original en el flujo y las otras cajas tienen un posicionamiento predeterminado de static, que a diferencia de un posicionamiento flotante o absoluto, mantienen el flujo, ya que respetan ese espacio que aún ocupa el articulo 2  */
+
+    /* Al cambiar la posicion del segundo  articulo de relativa a absoluto se pudo evidenciar como las otras cajas tomaron su espacio, ya que absoluto lo saaca del flujo;*/
+}
+/*  A partir del comportamiento visto, explique ¿Cuáles son las diferencias entre el 
+posicionamiento relativo y absoluto? 
+    1. El posicionamiento relativo no saca del flujo al elemento, dejando el espacio original, mientras que el posicionamiento absoluto sí lo hace.
+    2. Los desplazamientos en posicionamiento relativo son con base a su posición original, mientras que en el posicionamiento absoluto es con base al padre no estatico más inmediato o a body en caso que no exista un padre no estatico.
+*/
+
+/* ¿Cuál es la diferencia entre ocultar los elementos 
+ocupando display: none y visibility: hidden? 
+    Con visibility y hidden oculta el elemento y se mantiene en el flujo con su espacio original, mientras que con display y none el elemento se oculta, sale del flujo y las siguientes cajas toman ese espacio.*/
