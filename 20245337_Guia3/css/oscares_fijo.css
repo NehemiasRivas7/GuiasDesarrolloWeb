@@ -12,15 +12,22 @@ body{
 }
 
 header{
+    width: 100%;
     background-color: #16A086;
     height: 130px;
     overflow: hidden;
+    position: fixed;
+    z-index: 10;
 }
 
 footer{
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 70px;
     background: #16A086;
     height: 50px;
+    position: fixed;
+    top: 605px;
+   
 
 }
 
@@ -45,13 +52,16 @@ section{
     width: 90%;
     overflow: hidden; /* Crea un contexto en el que los hijos de section siendo flotantes no se salgan del flujo. Section adapta su altura para incluirlos. */
     position: relative;
+    top: 135px;
+    display: flex;
+    flex-wrap: wrap;
+   margin-bottom: 190px;
 }
 
 section article{
     font-size: 0.9rem;
     height: 340px;
     width: 32.33%;
-    float: left;
     margin: 0.5%;
     border: 2px dashed #16A086;
     padding: 1%;
