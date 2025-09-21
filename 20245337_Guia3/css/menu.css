@@ -1,0 +1,53 @@
+/* Para especificar más internamente el margen y el relleno */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+}
+
+/* Estilos generales */
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    line-height: 2.5em;
+}
+
+nav a{
+    color: #ddd;
+    display: block;
+    padding: 0 2.5em;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos de primer nivel */
+
+nav > ul {
+    background-color: #333;
+    width: 100%;
+    overflow: hidden;
+}
+nav > ul> li{
+    float: left;
+}
+/* saca del flujo a el segundo nivel para que no expanda a su padre el li de El Salvador*/
+nav > ul > li> ul{
+    position: absolute;
+    display: none;
+}
+
+nav>ul>li:hover ul{
+    display: block;
+}
+
+nav>ul>li>ul>li{
+    background-color: #222;
+}
