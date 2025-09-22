@@ -2,87 +2,151 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de inicio</title>
-    <link rel="stylesheet" href="./Guia1/css/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de inicio</title>
+  <link rel="stylesheet" href="./Guia1/css/index.css" />
 </head>
 
 <body>
-    <header>
-        <div></div>
-        <h2>Guías de Laboratorio</h2>
-        <h4>Nehemías Emanuel Rivas Umaña</h4>
-        <h4>Escuela Superior de Economía y Negocios</h4>
-        <h4>Desarrollo Web</h4>
-        <h4>Guillermo Calderón</h4>
-        <nav class="menu">
-            <ul>
-                <li><a href="#informacion">Sobre este sitio</a></li>
-                <li><a href="#guia1">Guía 1</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="informacion">
-            <h2>Sobre el sitio</h2>
-            <p>En el presente sitio web, se presentarán de forma ordenada la resolución de los ejercicios y ejemplos de las guías asignadas en la materia <span>Desarrollo Web. Las guías tiene como fin poner en práctica todos los conocimientos aprendidos en las clases importidas por el profesor y así desarrollar las habilidades necesarias para desarrollar sitios de web de la mejor forma posibe.</span></p>
-        </section>
+  <nav class="menu">
+    <ul>
+      <li><a href="#informacion">Sobre este sitio</a></li>
+      <li>
+        <a href="#guia">Guías</a>
+      </li>
+      <li><a href="#Agradecimientos">Agradecimientos</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h2>Guías de Laboratorio</h2>
+    <h4 class="enlace">
+      <a href="20245337_Guia2/html/biografia.html">Nehemías Emanuel Rivas Umaña</a>
+    </h4>
+    <h4 class="enlace">
+      <a href="https://www.esen.edu.sv/">Escuela Superior de Economía y Negocios</a>
+    </h4>
+    <h4>Desarrollo Web</h4>
+    <h4>Guillermo Calderón</h4>
+  </header>
 
-        <section id="guia1">
-            <h2>Guía 1</h2>
-            <table>
-                <caption>Enlaces a las páginas web de los ejercicios y ejemplos resueltos</caption>
-                <thead>
-                    <tr>
-                        <th>Enlaces</th>
-                        <th><a href="./Guia1//html/estilos_embebidos.html" target="_blank">Ejercicio 1</a></th>
-                        <th><a href="./Guia1/html/ejemplo2.html" target="_blank">Ejercicio 2</a></th>
-                        <th><a href="./Guia1/html/paises.html" target="_blank">Ejercicio 3</a></th>
-                        <th><a href="./Guia1/html/ejemplo1_sin_estilos_embebidos.html" target="_blank">Ejercicio 4</a></th>
-                        <th><a href="./Guia1/html/paises_restantes.html" target="_blank">Ejercicio 5</a></th>
-                        <th><a href="./Guia1/html/severance.html" target="_blank">Ejercicio 6</a></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Descripción</td>
-                        <td>Usando estilos CSS embebidos en las etiquetas HTML.</td>
-                        <td>Incluyendo reglas css mediante la etiqueta style.</td>
-                        <td>Usando reglas CSS definidas en archivos externos.</td>
-                        <td>Ejercicio 1 sin estilos embebidos, sino que las reglas de estilo estén en un archivo
-                            externo.</td>
-                        <td>Ejercicio 3 con los países restantes de centroamerica.</td>
-                        <td>Sitio web con mi programa favorito.</td>
-                    </tr>
-                </tbody>
+  <section id="informacion">
+    <h2>Sobre el sitio</h2>
+    <div id="sitio-flex">
+      <p>
+        En el presente sitio web, se presentarán de forma ordenada la
+        resolución de los ejercicios y ejemplos de las guías asignadas en la
+        materia
+        <span><a href="https://es.wikipedia.org/wiki/Desarrollo_web">Desarrollo Web</a></span>. Las guías tiene como fin
+        poner en práctica todos los
+        conocimientos aprendidos en las clases importidas por el profesor y
+        así desarrollar las habilidades necesarias para desarrollar sitios
+        de web de la mejor forma posibe.
+      </p>
+      <div id="img"></div>
+    </div>
+  </section>
+  <main id="guia">
+    <section class="guia">
+      <div class="caja-izquierda">
+        <h2>Guía 1</h2>
+      </div>
 
-            </table>
-        </section>
-        <section id="guia2">
-            <h2>Guía 2</h2>
-            <table>
-                <caption>Enlaces a las páginas web de los ejercicios y ejemplos resueltos</caption>
-                <thead>
-                    <tr>
-                        <th>Enlaces</th>
-                        <th><a href="./20245337_Guia2/html/pelicula.html" target="_blank">Ejercicio 1</a></th>
-                        <th><a href="./20245337_Guia2/html/tablero.html" target="_blank">Ejercicio 2</a></th>
-                        <th><a href="./20245337_Guia2/html/biografia.html" target="_blank">Ejercicio 3</a></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Descripción</td>
-                        <td>Usando selectores CSS avanzados.</td>
-                        <td>Diseñando un tablero para damas con la pseudo-clase :nth-child()</td>
-                        <td> Página web con biografía</td>
-                    </tr>
-                </tbody>
+      <div class="caja-derecha">
+        <a href="./Guia1//html/estilos_embebidos.html" target="_blank">
+          <h3>Ejercicio 1</h3>
+          <p>Usando estilos CSS embebidos en las etiquetas HTML</p>
+        </a>
+        <a href="./Guia1/html/ejemplo2.html" target="_blank">
+          <h3>Ejercicio 2</h3>
+          <p>Incluyendo reglas css mediante la etiqueta style</p>
+        </a>
+        <a href="./Guia1/html/paises.html" target="_blank">
+          <h3>Ejercicio 3</h3>
+          <p>Usando reglas CSS definidas en archivos externos</p>
+        </a>
+        <a href="./Guia1/html/ejemplo1_sin_estilos_embebidos.html" target="_blank">
+          <h3>Ejercicio 4</h3>
+          <p>Ejercicio 1 sin estilos embebidos, sino que las reglas de estilo
+            estén en un archivo externo</p>
+        </a>
+        <a href="./Guia1/html/paises_restantes.html" target="_blank">
+          <h3>Ejercicio 5</h3>
+          <p>Ejercicio 3 con los países restantes de centroamerica</p>
+        </a>
+        <a href="./Guia1/html/severance.html" target="_blank">
+          <h3>Ejercicio 6</h3>
+          <p> Sitio web con mi programa favorito</p>
+        </a>
+      </div>
+    </section>
+    <section class="guia">
+      <div class="caja-izquierda">
+        <h2>Guía 2</h2>
+      </div>
+      <div class="caja-derecha">
+        <a href="./20245337_Guia2/html/pelicula.html" target="_blank">
+          <h3>Ejercicio 1</h3>
+          <p>Usando selectores CSS avanzados</p>
+        </a>
 
-            </table>
-        </section>
-    </main>
+
+        <a href="./20245337_Guia2/html/tablero.html" target="_blank">
+          <h3>Ejercicio 2</h3>
+          <p>Diseñando un tablero para damas con la pseudo-clase :nth-child()</p>
+        </a>
+
+
+        <a href="./20245337_Guia2/html/biografia.html" target="_blank">
+          <h3>Ejercicio 3</h3>
+          <p>
+            Página web con biografía
+          </p>
+        </a>
+      </div>
+    </section>
+    <section class="guia">
+      <div class="caja-izquierda">
+        <h2>Guía 3</h2>
+      </div>
+      <div class="caja-derecha">
+        <a href="./20245337_Guia3/html/oscares.html" target="_blank">
+          <h3>Ejercicio 1</h3>
+          <p> Usando posicionamiento y visualización </p>
+        </a>
+        <a href="./20245337_Guia3/html/menu_horizontal.html" target="_blank">
+          <h3>Ejercicio 2</h3>
+          <p>Diseñando un menú horizontal multinivel</p>
+        </a>
+        <a href="./20245337_Guia3/html/index.html" target="_blank">
+          <h3>Ejercicio 3</h3>
+          <p>
+            Construyendo un diseño fijo (Ejercicio complementario 3: líquido)
+          </p>
+        </a>
+        <a href="./20245337_Guia3/html/analisis.html" target="_blank">
+          <h3>Ejercicio 4</h3>
+          <p>
+            Ejercicio complemetario 1: Usando posicionamiento y z-index
+          </p>
+        </a>
+        <a href="./20245337_Guia3/html/oscares_fijo.html" target="_blank">
+          <h3>Ejercicio 5</h3>
+          <p>
+            Ejercicio complementario 2: Página fija de oscares
+          </p>
+        </a>
+      </div>
+  </main>
+  <section id="Agradecimientos">
+    <h2>Agradecimientos</h2>
+    <p>
+      Gracias por el curso. Considero que el orden, la dificultad y la enseñanza me han ayudado a desarrollar mis habilidades de desarrollo web. 
+    </p>
+  </section>
+  <footer>
+   <p>© Contenido hecho por Nehemías Rivas (+503 61552928)</p>
+  </footer>
 </body>
 
 </html>

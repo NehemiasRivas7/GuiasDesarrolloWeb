@@ -1,66 +1,230 @@
 /* IMPORTACIONES */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* ESTILO CSS */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 10vh;
 }
+
 body {
-    background-color: #deeafa;
-    line-height: 1.5;
-    font-family: "Noto Serif", serif;
-
+  background-color: #fffefe;
+  line-height: 1.5;
+  font-family: "Noto Serif", serif;
 }
 
-div {
-    background: #2d2d22 url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/diclc0h-489b0c10-5e33-41d1-a698-c231b6117540.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGljbGMwaC00ODliMGMxMC01ZTMzLTQxZDEtYTY5OC1jMjMxYjYxMTc1NDAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.X6e0iA0EmYJLFzKEgASX-DbxxEBCEAvAgu-9CVIFaUg); 
-    color: #F0F6F7 ;
-    background-size: cover;
-    padding: 150px;
-    background-position: bottom;
-    margin-bottom: 20px;
-    margin-top: 0px;
-   
-   
+/* ESTILO DEL MENU */
+.menu {
+  background-color: #7f3931;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
 }
 
+/* ESTILO GENERAL DEL CONTENIDO DEL MENU */
+.menu>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+}
+
+.menu>ul>li>a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu>ul>li:hover {
+  border-bottom: red 2.5px solid;
+  font-weight: 600;
+}
+
+.menu>ul>li>ul>li {
+  background-color: #fabfb8;
+}
+
+/* ESTILO GENERAL DEL ENCABEZADO */
 header {
-    
-    text-align: center;
+  background-image: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.9)),
+    url("/20245337_Guia3/img/indexmain.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  text-align: right;
+  line-height: 28px;
+  align-content: flex-end;
+  top: 10vh;
+  padding-bottom: 5%;
 }
 
-header nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-section {
-    margin: 30px auto;
-    width: 75%;
-}
-h2 {
-    color: #7366d0;
+header h2,
+header h4 {
+  padding-right: 10%;
+  color: #c9c5c5;
 }
 
-table {
-    margin: 20px auto;
-    border-collapse: collapse;
-    border: 2px solid  #0B0E29;
-    text-align: left;
-    font-size: 14px;
-    
-
-}
-thead, thead a {
-    background-color:#7366d0;
-    color: white;
-    text-align: center;
+header h4:nth-child(4) {
+  font-weight: 400;
 }
 
-thead th, thead td, tbody td, tbody td {
-    border: 2px solid  white;
-    padding: 5px;
+header h4:nth-child(5) {
+  font-weight: 400;
 }
 
+header h2 {
+  padding-bottom: 3%;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.enlace a {
+  text-decoration: none;
+  color: rgb(202, 202, 202);
+  border-bottom: red 2.5px solid;
+}
+
+.enlace a:hover {
+  border: none;
+  color: #fff;
+}
+
+/* ESTILO DE LA  SECCION "SOBRE EL SITIO" */
+#informacion {
+  margin: 5% auto;
+  width: 75%;
+  text-align: justify;
+}
+
+span a {
+  color: black;
+  text-decoration: none;
+  border-bottom: red 2.5px solid;
+}
+
+span a:hover {
+  color: red;
+  border: none;
+}
+
+#informacion h2 {
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 40px;
+}
+
+#sitio-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+#sitio-flex #img {
+  background-image: url("/20245337_Guia2/img/ema.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 33%;
+  height: auto;
+}
+
+#sitio-flex p {
+  margin-top: 20px;
+  width: 50%;
+}
+
+/* DISEÑO GENERAL DEL MAIN: CONJUNTO DE GUÍAS*/
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #7f3931;
+  margin-bottom: 3%;
+}
+
+
+/* DISEÑO PARA CADA GUIA, LADO LATERIAL */
+main .guia {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.guia .caja-izquierda {
+  border-right: 1px solid gray;
+  color: white;
+  position: relative;
+  width: 6%;
+  margin-right: 2%;
+  padding-right: 3%;
+  width: 100px;
+}
+
+.caja-izquierda:nth-child(1):hover, .caja-izquierda:nth-child(1):hover+.caja-derecha a{
+  background-color: #994337;
+}
+
+.guia .caja-izquierda h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-270deg);
+  transform-origin: center;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* LADO DERECHO: LOS EJERCICIOS */
+.guia .caja-derecha {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.guia .caja-derecha a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  width: 30%;
+  padding: 1%;
+  margin: 1%;
+  text-align: center;
+  background: linear-gradient(90deg,
+      rgba(255, 51, 1, 0.2),
+      rgba(226, 29, 3, 0.2));
+  min-height: 150px;
+    }
+
+.guia .caja-derecha a:hover {
+  background-color: #b8483c ;
+  font-size: 1.04em;
+  font-weight: bold;
+}
+
+/* PARTE DE AGRADECIMIENTOS */
+#Agradecimientos{
+  width: 60%;
+  padding: 5%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer{
+  background-color: #7f3931;
+  color: white;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
